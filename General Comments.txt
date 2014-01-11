@@ -1,0 +1,169 @@
+Version 1.0.0
+Edit: none
+SVN Revision: 3
+This is the original code, copied from the practice project.
+Its documentation is in sample.txt
+The majority of this will be deleted, and all that is kept will be the class hierarchy
+**************************************
+Version 1.1.0
+Edit: Jeff Rehberg
+SVN Revision: 9
+3:00 pm 2/6/10
+* Gutted Default code, prepared for our own filling in
+***************************************
+Version 1.2.0
+Edit: Jeff Rehberg
+SVN Revision: 10
+3:45 pm 2/6/10
+* Added Global Constants
+* Added Member variables to most classes
+* Added (not implemented) AbsoluteEncoder class
+* Minor edits to classes - just names
+* Added TODOs
+**************************************
+Version 1.3.0
+Edit: Jeff Rehberg
+SVN Revision: 11
+4:30 pm 2/6/10
+* Implemented the majority of SoccerBot
+* Minor Edits to global constants and member variables
+***************************************
+Version 1.3.1
+Edit: Jeff Rehberg
+SVN Revision: 12
+5:00 pm 2/6/10
+* compiled
+* added autonomous code
+
+***************************************
+Version 1.4
+Edit: Adam Werries
+SVN Revision 14
+5:20 pm 2/6/2010
+*added code for 360 controller
+*added code for Arcade/Tank drive and switching
+
+***************************************
+Version 1.4.1
+Edit: Adam Werries
+SVN Revision 15
+6:00 pm 2/6/2010
+*properly implemented tank drive in SoccerBot
+*commented out arcade/tank switching...not working
+*compiles
+***************************************
+Version 1.5.0
+Edit: Jeff R
+SVN Revision: 19
+___ pm 2/7/10
+* Refined Encoder global constant
+* Moved Autonomous code to a branch
+* Added debugger couts
+* Added Encoder Outputs
+* Prepared to load...
+***************************************
+Version 1.5.1
+Edit: Adam W
+SVN Revision: 22
+5:16pm 2/7/2010
+*make jeff's previous revision compile
+	*commented out RotateXDegrees, gyro not implemented yet
+	
+***************************************
+Version 1.6.0
+Edit: Adam W
+SVN Revision: 33
+7:50pm 2/11/2010
+*integrated AbsoluteEncoder from other branch
+*added readouts for the two Absolute Encoders
+*added control of motors for shooter/tensioner with triggers/bumpers
+****************************************
+Version 1.6.5
+Edit: Adam W
+SVN Revision: 35
+4:43pm 2/12/2010
+*added CockShooter function, full power
+*right trigger fire, left trigger Cock
+*added IterativeRobot.cpp (edited) to fix prinf's all the time
+*added DashboardDataSender to enable dashboard (from Matt's code)
+*****************************************
+Version 1.6.7
+Edit: Adam W
+SVN Revision: 36
+7:37pm 2/12/2010
+*made Cockshooter automatic
+*right trigger shoots
+
+*****************************************
+Version 1.6.8
+Edit: Adam W
+SVN Revision: 38
+7:55pm 2/12/2010
+*re-added calls and handles for Arcade/Tank
+	*uses A
+*****************************************
+Version 2.0
+Edit: Adam W
+SVN Rev: 70
+7:20 2/15/2010
+*added a crapload since last documentation....
+*auto-shooter when ball is in the way while holding R trigger
+*some acceleration code was added to keep robot from falling over]
+*autonomous code started
+*software limits for tensioner added
+*fixed cockpoint
+*probably some other stuff BUT NO ONE ELSE UPDATES THIS.
+I WILL KILL ALL OF YOU.
+*****************************************
+Version 2.1
+Edit: Adam W
+SVN Rev: 73
+8:02 2/18/2010
+*added support for both controllers, one being for driving, two being for shooting
+*fixed some encoder stuff!
+*****************************************
+Version 2.2
+Edit: Adam W
+SVN Rev: 84
+8:29 2/18/2010
+*made cock function its own task, to not interrupt anything :)
+*added sawyers auto code
+*********************************
+Version 2.5
+Edit: Jeff R and Matt Z
+SVN Revision: 93ish
+5:30pm 2/20/10
+* Cleaned code and fixed dashboard data packer
+*********************************
+Version 3.0
+Edit: Adam Werries
+SVN Revision: 119ish
+7:18pm 3/1/2010
+* integrated camera aim branch w/ PID
+*integrated camera zero function
+******************************************
+Version 3.2
+Edit: Adam Werries
+SVN Revision: 133
+7:45pm 3/3/2010
+*fixed channels for some servos/motors (global constants)
+*fixed arcade to be...better...less sensitive
+*cleaned a LOT
+*RotateXDegrees fixed immensely
+*DriveXFeet cleaned
+*removed Shoot()
+*added testtensioner limits and speed adjusts
+*added ReadRelativeEncoder
+*IsCocked and IsUnCocked added many many revisions ago
+*PIDOutput moved around and fixed. we can move forward while turning auto
+*basic Lift function added...5 minutes from now
+*PID has decent functionality, Aim works decently
+*ZeroCamera is in...only kinda maybe works.  --added some fixes
+*lots of GetAngle functions for various motors/sensors
+*DashboardDataSender all fixed
+*autocock function all goooooone. caused problems with no benefit :(
+*test joystick added with button mappings
+*GetTension function added
+*autoshoot function moved around and such
+*button mappings changed, see ButtonMappings.txt
+*********************************************

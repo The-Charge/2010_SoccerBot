@@ -1,0 +1,6 @@
+-Comment!
+-decide where m_gyro goes (SoccerBot or Zoidberg?)
+-read and fix all @depreciated comments
+-decide whether or not to implement //TODO comments
+-rename 'test' functions
+-rename 'elpises' functions

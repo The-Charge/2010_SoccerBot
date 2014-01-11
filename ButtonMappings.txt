@@ -1,0 +1,64 @@
+/* BUTTON MAPPING - DRIVE STICK (Brandon or MattZ)
+		 * joysticks: drive
+		 * Lclick:
+		 * Rclick:
+		 * LB: Spin 180 left & invert
+		 * RB: Spin 180 right & invert
+		 * LT: half power
+		 * RT:
+		 * A: enable spin mode, break out of rotatexdegrees (doesn't uninvert)
+		 * B: 
+		 * X: AutoAim
+		 * Y:
+		 * Start:
+		 * Select:
+		 */
+		 
+		 /* BUTTON MAPPING - SHOOT STICK RENEE
+			 * joysticks: 
+			 * Lclick: 
+			 * Rclick: 
+			 * LB: 
+			 * RB: 
+			 * LT: shoots continuously
+			 * RT: 
+			 * A: Increase Tension
+			 * B: Decrease Tension
+			 * X: 
+			 * Y: 
+			 * Start: enable Autoshoot task
+			 * Select: 
+			 */
+			 
+			 /* BUTTON MAPPING - SHOOT STICK JEFF (boom headshot)
+			 * joysticks: right joy controls camera
+			 * Lclick: 
+			 * Rclick: enables joystick control (toggle)
+			 * LB: decrease tension
+			 * RB: increase tension
+			 * LT: shoots continuously
+			 * RT: 
+			 * A:
+			 * B: Zone 3 Tension
+			 * X: Zone 1 Tension
+			 * Y: Zone 2 Tension
+			 * Start: enable Autoshoot task
+			 * Select: disable Autoshoot task
+			 */
+			 
+		/* BUTTON MAPPING - TEST STICK (for debugging purposes)
+		 * Throttle: lift
+		 * Stick:
+		 * Trigger: cout Button Mapping :D
+		 * Button 2: cout GetTension()
+		 * Button 3: cout Absolute Encoder and Relative Encoder values
+		 * Button 4: 
+		 * Button 5: increase hooker servo
+		 * Button 6: decrease hooker servo
+		 * Button 7: cout camera servo values
+		 * Button 8: 
+		 * Button 9: cout GetGyroAngle()
+		 * Button 10: reset Gyro
+		 * Button 11: 
+		 * Button 12: 
+		 */
