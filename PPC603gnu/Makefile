@@ -79,124 +79,124 @@ endif
 
 
 #Project Targets
-PROJECT_TARGETS = BuiltinDefaultCode/$(MODE_DIR)/BuiltinDefaultCode.out \
-	 BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage.o
+PROJECT_TARGETS = 2014_SoccerBot/$(MODE_DIR)/2014_SoccerBot.out \
+	 2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage.o
 
 
 #Rules
 
-# BuiltinDefaultCode
+# 2014_SoccerBot
 ifeq ($(DEBUG_MODE),1)
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
 else
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-BuiltinDefaultCode/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+2014_SoccerBot/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
 endif
-BuiltinDefaultCode/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h/wrn/coreip -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h -IC:/windriver/workspace/SoccerBot -IC:/windriver/workspace/SoccerBot_CameraTesting 
-BuiltinDefaultCode/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
-BuiltinDefaultCode/$(MODE_DIR)/% : IDE_DEFINES = 
-BuiltinDefaultCode/$(MODE_DIR)/% : PROJECT_TYPE = DKM
-BuiltinDefaultCode/$(MODE_DIR)/% : DEFINES = 
-BuiltinDefaultCode/$(MODE_DIR)/% : EXPAND_DBG = 0
-BuiltinDefaultCode/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
-BuiltinDefaultCode/$(MODE_DIR)/% : CPU = PPC603
-BuiltinDefaultCode/$(MODE_DIR)/% : TOOL_FAMILY = gnu
-BuiltinDefaultCode/$(MODE_DIR)/% : TOOL = gnu
-BuiltinDefaultCode/$(MODE_DIR)/% : TOOL_PATH = 
-BuiltinDefaultCode/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
-BuiltinDefaultCode/$(MODE_DIR)/% : LIBPATH = 
-BuiltinDefaultCode/$(MODE_DIR)/% : LIBS = 
-BuiltinDefaultCode/$(MODE_DIR)/% : OBJ_DIR := BuiltinDefaultCode/$(MODE_DIR)
+2014_SoccerBot/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h/wrn/coreip -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h -IC:/windriver/workspace/SoccerBot -IC:/windriver/workspace/SoccerBot_CameraTesting 
+2014_SoccerBot/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+2014_SoccerBot/$(MODE_DIR)/% : IDE_DEFINES = 
+2014_SoccerBot/$(MODE_DIR)/% : PROJECT_TYPE = DKM
+2014_SoccerBot/$(MODE_DIR)/% : DEFINES = 
+2014_SoccerBot/$(MODE_DIR)/% : EXPAND_DBG = 0
+2014_SoccerBot/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
+2014_SoccerBot/$(MODE_DIR)/% : CPU = PPC603
+2014_SoccerBot/$(MODE_DIR)/% : TOOL_FAMILY = gnu
+2014_SoccerBot/$(MODE_DIR)/% : TOOL = gnu
+2014_SoccerBot/$(MODE_DIR)/% : TOOL_PATH = 
+2014_SoccerBot/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
+2014_SoccerBot/$(MODE_DIR)/% : LIBPATH = 
+2014_SoccerBot/$(MODE_DIR)/% : LIBS = 
+2014_SoccerBot/$(MODE_DIR)/% : OBJ_DIR := 2014_SoccerBot/$(MODE_DIR)
 
-OBJECTS_BuiltinDefaultCode = BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage.o
+OBJECTS_2014_SoccerBot = 2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage.o
 
-BuiltinDefaultCode/$(MODE_DIR)/BuiltinDefaultCode.out : $(OBJECTS_BuiltinDefaultCode)
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_BuiltinDefaultCode) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_BuiltinDefaultCode) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
+2014_SoccerBot/$(MODE_DIR)/2014_SoccerBot.out : $(OBJECTS_2014_SoccerBot)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_2014_SoccerBot) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_2014_SoccerBot) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
 
-BuiltinDefaultCode/$(MODE_DIR)/BuiltinDefaultCode_compile_file : $(FILE) ;
+2014_SoccerBot/$(MODE_DIR)/2014_SoccerBot_compile_file : $(FILE) ;
 
-_clean :: BuiltinDefaultCode/$(MODE_DIR)/BuiltinDefaultCode_clean
+_clean :: 2014_SoccerBot/$(MODE_DIR)/2014_SoccerBot_clean
 
-BuiltinDefaultCode/$(MODE_DIR)/BuiltinDefaultCode_clean : 
-	$(TRACE_FLAG)if [ -d "BuiltinDefaultCode" ]; then cd "BuiltinDefaultCode"; rm -rf $(MODE_DIR); fi
+2014_SoccerBot/$(MODE_DIR)/2014_SoccerBot_clean : 
+	$(TRACE_FLAG)if [ -d "2014_SoccerBot" ]; then cd "2014_SoccerBot"; rm -rf $(MODE_DIR); fi
 
 
-# BuiltinDefaultCode_partialImage
+# 2014_SoccerBot_partialImage
 ifeq ($(DEBUG_MODE),1)
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
 else
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
 endif
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h/wrn/coreip -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h -IC:/windriver/workspace/SoccerBot -IC:/windriver/workspace/SoccerBot_CameraTesting 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : IDE_DEFINES = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : PROJECT_TYPE = DKM
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : DEFINES = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : EXPAND_DBG = 0
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : CPU = PPC603
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : TOOL_FAMILY = gnu
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : TOOL = gnu
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : TOOL_PATH = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : LIBPATH = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : LIBS = 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/% : OBJ_DIR := BuiltinDefaultCode_partialImage/$(MODE_DIR)
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h/wrn/coreip -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h -IC:/windriver/workspace/SoccerBot -IC:/windriver/workspace/SoccerBot_CameraTesting 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : IDE_DEFINES = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : PROJECT_TYPE = DKM
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : DEFINES = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : EXPAND_DBG = 0
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : CPU = PPC603
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : TOOL_FAMILY = gnu
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : TOOL = gnu
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : TOOL_PATH = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : LIBPATH = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : LIBS = 
+2014_SoccerBot_partialImage/$(MODE_DIR)/% : OBJ_DIR := 2014_SoccerBot_partialImage/$(MODE_DIR)
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.o : $(PRJ_ROOT_DIR)/PIDController.cpp $(FORCE_FILE_BUILD)
+2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.o : $(PRJ_ROOT_DIR)/PIDController.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.o : $(PRJ_ROOT_DIR)/SoccerBot.cpp $(FORCE_FILE_BUILD)
+2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.o : $(PRJ_ROOT_DIR)/SoccerBot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.o : $(PRJ_ROOT_DIR)/Target.cpp $(FORCE_FILE_BUILD)
+2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.o : $(PRJ_ROOT_DIR)/Target.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.o : $(PRJ_ROOT_DIR)/i2cAccel.cpp $(FORCE_FILE_BUILD)
+2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.o : $(PRJ_ROOT_DIR)/i2cAccel.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_BuiltinDefaultCode_partialImage = BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.o \
-	 BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.o \
-	 BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.o \
-	 BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.o
+OBJECTS_2014_SoccerBot_partialImage = 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.o \
+	 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.o \
+	 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.o \
+	 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.o
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage.o : $(OBJECTS_BuiltinDefaultCode_partialImage)
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_BuiltinDefaultCode_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
+2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage.o : $(OBJECTS_2014_SoccerBot_partialImage)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_2014_SoccerBot_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage_compile_file : $(FILE) ;
+2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage_compile_file : $(FILE) ;
 
-_clean :: BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage_clean
+_clean :: 2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage_clean
 
-BuiltinDefaultCode_partialImage/$(MODE_DIR)/BuiltinDefaultCode_partialImage_clean : 
-	$(TRACE_FLAG)if [ -d "BuiltinDefaultCode_partialImage" ]; then cd "BuiltinDefaultCode_partialImage"; rm -rf $(MODE_DIR); fi
+2014_SoccerBot_partialImage/$(MODE_DIR)/2014_SoccerBot_partialImage_clean : 
+	$(TRACE_FLAG)if [ -d "2014_SoccerBot_partialImage" ]; then cd "2014_SoccerBot_partialImage"; rm -rf $(MODE_DIR); fi
 
 force : 
 
-DEP_FILES := BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.d BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.d BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.d \
-	 BuiltinDefaultCode_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.d
+DEP_FILES := 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/PIDController.d 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/SoccerBot.d 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/Target.d \
+	 2014_SoccerBot_partialImage/$(MODE_DIR)/Objects/2014_SoccerBot/i2cAccel.d
 -include $(DEP_FILES)
 
 
