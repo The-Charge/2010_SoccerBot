@@ -1,5 +1,7 @@
 /* BUTTON MAPPING - DRIVE STICK (Brandon or MattZ)
-		 * joysticks: drive
+ * Needs (2) Xbox 360 Controllers (and one Joystick for test mode)
+ 
+		 * joysticks: drive (Joystick #1)
 		 * Lclick:
 		 * Rclick:
 		 * LB: Spin 180 left & invert
@@ -14,23 +16,28 @@
 		 * Select:
 		 */
 		 
-		 /* BUTTON MAPPING - SHOOT STICK RENEE
-			 * joysticks: 
-			 * Lclick: 
-			 * Rclick: 
-			 * LB: 
-			 * RB: 
-			 * LT: shoots continuously
-			 * RT: 
-			 * A: Increase Tension
-			 * B: Decrease Tension
-			 * X: 
-			 * Y: 
-			 * Start: enable Autoshoot task
-			 * Select: 
-			 */
+/* Some constants that define what buttons on the 360
+ * map to what. */
+
+		ButtonA = 1;
+		ButtonB = 2;
+		ButtonX = 3;
+		ButtonY = 4;
+		LeftBumper = 5;
+		RightBumper = 6;
+		Select = 7;
+		Start = 8;
+		LeftClick = 9;
+		RightClick = 10;
+
+		LeftXAxis = 1;
+		LeftYAxis = 2;
+		TriggerAxis = 3;
+		RightXAxis = 4;
+		RightYAxis = 5;
+		
 			 
-			 /* BUTTON MAPPING - SHOOT STICK JEFF (boom headshot)
+			 /* BUTTON MAPPING - SHOOT STICK JEFF (boom headshot)  (Joystick #2)
 			 * joysticks: right joy controls camera
 			 * Lclick: 
 			 * Rclick: enables joystick control (toggle)
@@ -46,19 +53,60 @@
 			 * Select: disable Autoshoot task
 			 */
 			 
-		/* BUTTON MAPPING - TEST STICK (for debugging purposes)
+		 /* BUTTON MAPPING - SHOOT STICK RENEE  (Joystick #2)
+			 * joysticks: 
+			 * Lclick: 
+			 * Rclick: 
+			 * LB: 
+			 * RB: 
+			 * LT: shoots continuously
+			 * RT: 
+			 * A: Increase Tension
+			 * B: Decrease Tension
+			 * X: 
+			 * Y: 
+			 * Start: enable Autoshoot task
+			 * Select: 
+			 */
+			 
+			 
+		/* BUTTON MAPPING - TEST STICK (for debugging purposes)  (not Xbox 360)
 		 * Throttle: lift
 		 * Stick:
-		 * Trigger: cout Button Mapping :D
-		 * Button 2: cout GetTension()
-		 * Button 3: cout Absolute Encoder and Relative Encoder values
+		 * Trigger:   cout Button Mapping :D
+		 * Button 2:  cout GetTension()
+		 * Button 3:  cout Absolute Encoder and Relative Encoder values
 		 * Button 4: 
-		 * Button 5: increase hooker servo
-		 * Button 6: decrease hooker servo
-		 * Button 7: cout camera servo values
+		 * Button 5:  increase hooker servo
+		 * Button 6:  decrease hooker servo
+		 * Button 7:  cout camera servo values
 		 * Button 8: 
-		 * Button 9: cout GetGyroAngle()
+		 * Button 9:  cout GetGyroAngle()
 		 * Button 10: reset Gyro
 		 * Button 11: 
 		 * Button 12: 
-		 */
+		 */	 
+		 
+*/
+//		 PWM Output Channels
+		PWMOUT_RIGHT_WHEELS = 1;
+		PWMOUT_LEFT_WHEELS = 2;
+		PWMOUT_SHOOTER = 3;
+		PWMOUT_TENSIONER = 4;
+		PWMOUT_CAMERA_PAN = 9;
+		PWMOUT_CAMERA_TILT = 10;
+		PWMOUT_LIFTER = 5;
+		PWMOUT_LIFTER_RELEASE = 8;
+
+//		  Digital Input Channels
+		DIGIN_RIGHT_WHEEL_ENCODER_A = 2;
+		DIGIN_RIGHT_WHEEL_ENCODER_B = 1;
+		DIGIN_LEFT_WHEEL_ENCODER_A = 3;
+		DIGIN_LEFT_WHEEL_ENCODER_B = 4;
+
+//		  Analog Input Channels
+		ANIN_GYRO = 1;
+		ANIN_ABSOLUTE_ENCODER_SHOOTER = 3;
+		ANIN_ABSOLUTE_ENCODER_TENSIONER = 2;
+		ANIN_PHOTO_BALL_SENSOR = 7;
+*/
