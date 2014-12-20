@@ -1,0 +1,4 @@
+cd /
+cd ni-rt
+cd system
+put 2014_SoccerBot/Debug/2014_SoccerBot.out FRC_UserProgram.out
