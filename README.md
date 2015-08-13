@@ -1,4 +1,4 @@
-2014_SoccerBot
+2010_SoccerBot
 ==============
 
 Our 2010 SoccerBot built for WindRiver 2014 and stuffed into GitHub
